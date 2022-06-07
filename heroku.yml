@@ -1,0 +1,8 @@
+setup:
+  addons:
+    - plan: herokh-postgreesql
+      as DATABASE
+
+build:
+  docker:
+    web: Dockerfile
