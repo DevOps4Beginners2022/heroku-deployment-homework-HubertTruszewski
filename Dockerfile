@@ -1,7 +1,9 @@
 FROM golang:1.17-alpine
 WORKDIR /build
 
-ENV PORT=8000
+ARG PORT
+
+ENV PORT=${PORT}
 
 COPY go.mod go.mod ./
 COPY go.sum go.sum ./
